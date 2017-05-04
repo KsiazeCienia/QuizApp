@@ -10,9 +10,8 @@ import UIKit
 
 class Question: NSObject {
     
-    let questionText: String = ""
-    let answers: [String] = []
-    let correctAnswer: Int = 0
-    
+    var questionText: String = ""
+    var answers: [String] = []
+    var correctAnswer: Int = 0
     
 }
