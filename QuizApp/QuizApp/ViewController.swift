@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let model = QuizModel()
+    var questions = [Question]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+         self.questions = model.getQuestions()
     }
 
     override func didReceiveMemoryWarning() {

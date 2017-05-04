@@ -1,0 +1,52 @@
+[
+  {
+      "questionText":"Kto prowadził pierwszą polską edycję Milionerzy?,
+      "answers": ["mkfifo","lockf","fifo"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Które z poniższych wywołań Matlaba utworzy obiekt LTI?",
+      "answers": ["sys=step(licz,mian)","sys=tf(licz,mian)","sys=zpk(licz,mian)"],
+      "correctAnswer":1
+  },
+  {
+      "questionText":"Pierwiastki licznika transmitancji to:",
+      "answers": ["zera","bieguny","źródła"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Która z poniższych funkcji Matalaba liczy o",
+      "answers": ["1","2"],
+      "correctAnswer":1
+  },
+  {
+      "questionText":"Kto gra w coda",
+      "answers": ["Marcin","Maniek"],
+      "correctAnswer":1
+  },
+  {
+      "questionText":"Czy Tomek jest dobry",
+      "answers": ["i to jeszcze jak","na bank", "100%"],
+      "correctAnswer":2
+  },
+  {
+      "questionText":"Kto wisi na scianie",
+      "answers": ["scarlet johanson","adam małysz"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Czy koty spia",
+      "answers": ["tak","nie"],
+      "correctAnswer":1
+  },
+  {
+      "questionText":"Czy powinienm dostac ten staz",
+      "answers": ["tak","tak"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Czy warto grac na kompie",
+      "answers": ["tak","nie"],
+      "correctAnswer":1
+  }
+]
