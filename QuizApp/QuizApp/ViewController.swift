@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
          self.questions = model.getQuestions()
         
-        if (questions.isEmpty) {
+        if (!questions.isEmpty) {
             currentQuestion = questions[0]
             
-            
+            displayCurrentQuestion()
         }
         
         
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             
             //create answers buttons
             for _ in 0...actualCurrentQuestion.answers.count {
-                
+                createAnswerButtons()
             }
         }
     }

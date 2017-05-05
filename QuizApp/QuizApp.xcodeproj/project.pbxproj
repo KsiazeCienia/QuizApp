@@ -14,8 +14,8 @@
 		D3F2DA181EBB36C600DCF6B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F2DA161EBB36C600DCF6B0 /* LaunchScreen.storyboard */; };
 		D3F2DA201EBB378B00DCF6B0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA1F1EBB378B00DCF6B0 /* Question.swift */; };
 		D3F2DA221EBB391400DCF6B0 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA211EBB391400DCF6B0 /* QuizModel.swift */; };
-		D3F2DA241EBB40F100DCF6B0 /* QuestionData in Resources */ = {isa = PBXBuildFile; fileRef = D3F2DA231EBB40F100DCF6B0 /* QuestionData */; };
 		D3F2DA261EBCF95D00DCF6B0 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA251EBCF95D00DCF6B0 /* AnswerButton.swift */; };
+		D3F2DA281EBD06B900DCF6B0 /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = D3F2DA271EBD06B900DCF6B0 /* QuestionData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		D3F2DA191EBB36C600DCF6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F2DA1F1EBB378B00DCF6B0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D3F2DA211EBB391400DCF6B0 /* QuizModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
-		D3F2DA231EBB40F100DCF6B0 /* QuestionData */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuestionData; sourceTree = "<group>"; };
 		D3F2DA251EBCF95D00DCF6B0 /* AnswerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		D3F2DA271EBD06B900DCF6B0 /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				D3F2DA141EBB36C600DCF6B0 /* Assets.xcassets */,
 				D3F2DA161EBB36C600DCF6B0 /* LaunchScreen.storyboard */,
 				D3F2DA191EBB36C600DCF6B0 /* Info.plist */,
-				D3F2DA231EBB40F100DCF6B0 /* QuestionData */,
+				D3F2DA271EBD06B900DCF6B0 /* QuestionData.json */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 			files = (
 				D3F2DA181EBB36C600DCF6B0 /* LaunchScreen.storyboard in Resources */,
 				D3F2DA151EBB36C600DCF6B0 /* Assets.xcassets in Resources */,
-				D3F2DA241EBB40F100DCF6B0 /* QuestionData in Resources */,
 				D3F2DA131EBB36C600DCF6B0 /* Main.storyboard in Resources */,
+				D3F2DA281EBD06B900DCF6B0 /* QuestionData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
