@@ -15,6 +15,7 @@
 		D3F2DA201EBB378B00DCF6B0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA1F1EBB378B00DCF6B0 /* Question.swift */; };
 		D3F2DA221EBB391400DCF6B0 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA211EBB391400DCF6B0 /* QuizModel.swift */; };
 		D3F2DA241EBB40F100DCF6B0 /* QuestionData in Resources */ = {isa = PBXBuildFile; fileRef = D3F2DA231EBB40F100DCF6B0 /* QuestionData */; };
+		D3F2DA261EBCF95D00DCF6B0 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2DA251EBCF95D00DCF6B0 /* AnswerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D3F2DA1F1EBB378B00DCF6B0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D3F2DA211EBB391400DCF6B0 /* QuizModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		D3F2DA231EBB40F100DCF6B0 /* QuestionData */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QuestionData; sourceTree = "<group>"; };
+		D3F2DA251EBCF95D00DCF6B0 /* AnswerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D3F2DA0D1EBB36C600DCF6B0 /* AppDelegate.swift */,
 				D3F2DA211EBB391400DCF6B0 /* QuizModel.swift */,
 				D3F2DA1F1EBB378B00DCF6B0 /* Question.swift */,
+				D3F2DA251EBCF95D00DCF6B0 /* AnswerButton.swift */,
 				D3F2DA0F1EBB36C600DCF6B0 /* ViewController.swift */,
 				D3F2DA111EBB36C600DCF6B0 /* Main.storyboard */,
 				D3F2DA141EBB36C600DCF6B0 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F2DA261EBCF95D00DCF6B0 /* AnswerButton.swift in Sources */,
 				D3F2DA221EBB391400DCF6B0 /* QuizModel.swift in Sources */,
 				D3F2DA201EBB378B00DCF6B0 /* Question.swift in Sources */,
 				D3F2DA101EBB36C600DCF6B0 /* ViewController.swift in Sources */,
