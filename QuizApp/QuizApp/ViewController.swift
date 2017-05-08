@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     var currentQuestion:Question?
     
+    var numberOfCorrectAnswers = 0
+    
     let model = QuizModel()
     var questions = [Question]()
 
@@ -90,10 +92,13 @@ class ViewController: UIViewController {
             if (answerButton.tag == currentQuestion?.correctAnswer) {
                // user got it correct
                 resultLabel.text = "Dobrze Mordeczko!"
+                numberOfCorrectAnswers += 1
             } else {
                // user got it wrong            
                 resultLabel.text = "Słabiutko"
             }
+            
+            resultButton.setTitle("Następne pytanie", for: .normal)
             
             //MARK:-TODO feedback
             feedbackLabel.text = ""
@@ -103,9 +108,24 @@ class ViewController: UIViewController {
     
     @IBAction func resultButtonTapped(_ sender: Any) {
         
-        // Remove answer buttons
+        // Remove answer buttons of previous question
         for view in answersStackView.arrangedSubviews {
             view.removeFromSuperview()
+        }
+        
+        let currentTitle = resultButton.title(for: .normal)
+        
+        if let actualTitle = currentTitle {
+            if actualTitle == "A może by tak jeszcz raz?" {
+                
+                currentQuestion = questions[0]
+                numberOfCorrectAnswers = 0
+                displayCurrentQuestion()
+                
+                dimView.alpha = 0
+                
+                return
+            }
         }
         
         let indexOfCurrentQuestion = questions.index(of: currentQuestion!)
@@ -123,7 +143,12 @@ class ViewController: UIViewController {
                 
                 dimView.alpha = 0
             } else {
+                // display the restults
+                resultLabel.text = "Twoje wyniki"
+                feedbackLabel.text = "Your score is \(numberOfCorrectAnswers) of \(questions.count)"
+                resultButton.setTitle("A może by tak jeszcz raz?", for: .normal)
                 
+                dimView.alpha = 1
             }
             
         }
