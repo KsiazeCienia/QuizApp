@@ -67,6 +67,7 @@ class ViewController: UIViewController {
                 answerButton.tag = i
                 
                 answerButton.setAnswerLabel(answerText: actualCurrentQuestion.answers[i])
+                answerButton.setNumberLabel(answerNumber: i + 1)
                 
                 let heightConstraint = NSLayoutConstraint(item: answerButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
                 answerButton.addConstraint(heightConstraint)
@@ -93,12 +94,20 @@ class ViewController: UIViewController {
                // user got it correct
                 resultLabel.text = "Dobrze Mordeczko!"
                 numberOfCorrectAnswers += 1
+                
+                resultView.backgroundColor = UIColor(red: 72/255, green: 161/255, blue: 49/255, alpha: 0.5)
+                resultButton.backgroundColor = UIColor(red: 7/255, green: 56/255, blue: 16/255, alpha: 0.5)
             } else {
                // user got it wrong            
                 resultLabel.text = "Słabiutko"
+            
+                resultView.backgroundColor = UIColor(red: 161/255, green: 44/255, blue: 36/255, alpha: 0.5)
+                resultButton.backgroundColor = UIColor(red: 56/255, green: 19/255, blue: 16/255, alpha: 0.5)
             }
             
             resultButton.setTitle("Następne pytanie", for: .normal)
+            
+            
             
             //MARK:-TODO feedback
             feedbackLabel.text = ""
@@ -147,6 +156,9 @@ class ViewController: UIViewController {
                 resultLabel.text = "Twoje wyniki"
                 feedbackLabel.text = "Your score is \(numberOfCorrectAnswers) of \(questions.count)"
                 resultButton.setTitle("A może by tak jeszcz raz?", for: .normal)
+                
+                resultView.backgroundColor = UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 0.5)
+                resultButton.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5)
                 
                 dimView.alpha = 1
             }
