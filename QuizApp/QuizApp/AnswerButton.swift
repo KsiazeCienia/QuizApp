@@ -30,6 +30,7 @@ class AnswerButton: UIStackView {
         self.axis = .horizontal
         
         answerStackView.addArrangedSubview(answerLabel)
+        answerStackView.alignment = .center
         self.addArrangedSubview(answerStackView)
         
     }
@@ -39,6 +40,7 @@ class AnswerButton: UIStackView {
     }
     
     func setAnswerLabel(answerText: String) {
+        answerLabel.textAlignment = .center
         answerLabel.text = answerText
     }
 

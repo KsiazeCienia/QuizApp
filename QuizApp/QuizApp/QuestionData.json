@@ -1,8 +1,8 @@
 [
   {
-      "questionText":"Kto prowadził pierwszą polską edycję Milionerzy?",
-      "answers": ["mkfifo","lockf","fifo"],
-      "correctAnswer":0
+      "questionText":"Jaką wysokość ma najwyższa hałda stożkowa w Europie powszechnie nazywana Szarlotą?",
+      "answers": ["121","134","173"],
+      "correctAnswer":1
   },
   {
       "questionText":"Które z poniższych wywołań Matlaba utworzy obiekt LTI?",
