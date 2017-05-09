@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var prizeImage: UIImageView!
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var dimView: UIView!
     @IBOutlet weak var answersStackView: UIStackView!
@@ -27,6 +28,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        prizeImage.isHidden = true
         
         dimView.alpha = 0
         // Do any additional setup after loading the view, typically from a nib.
@@ -130,7 +133,7 @@ class ViewController: UIViewController {
                 currentQuestion = questions[0]
                 numberOfCorrectAnswers = 0
                 displayCurrentQuestion()
-                
+                prizeImage.isHidden = true
                 dimView.alpha = 0
                 
                 return
@@ -153,17 +156,40 @@ class ViewController: UIViewController {
                 dimView.alpha = 0
             } else {
                 // display the restults
-                resultLabel.text = "Twoje wyniki"
-                feedbackLabel.text = "Your score is \(numberOfCorrectAnswers) of \(questions.count)"
-                resultButton.setTitle("A może by tak jeszcz raz?", for: .normal)
-                
-                resultView.backgroundColor = UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 0.5)
-                resultButton.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5)
-                
-                dimView.alpha = 1
+                displayResults()
             }
             
         }
+    }
+    
+    func displayResults() {
+        
+        prizeImage.isHidden = false
+        
+        if (numberOfCorrectAnswers == 10) {
+            let aspectConstraint = NSLayoutConstraint(item: prizeImage, attribute: .height, relatedBy: .equal, toItem: prizeImage, attribute: .width, multiplier: 878/1204, constant: 0)
+            prizeImage.addConstraint(aspectConstraint)
+            resultLabel.text = "W cipe!"
+            prizeImage.image = UIImage(named: "prize2")
+        } else if(numberOfCorrectAnswers > 5) {
+            
+            let aspectConstraint = NSLayoutConstraint(item: prizeImage, attribute: .height, relatedBy: .equal, toItem: prizeImage, attribute: .width, multiplier: 3024/4032, constant: 0)
+            prizeImage.addConstraint(aspectConstraint)
+            resultLabel.text = "Wporząsiu"
+            prizeImage.image = UIImage(named: "wporzasiu")
+        } else {
+            let aspectConstraint = NSLayoutConstraint(item: prizeImage, attribute: .height, relatedBy: .equal, toItem: prizeImage, attribute: .width, multiplier: 3024/4032, constant: 0)
+            prizeImage.addConstraint(aspectConstraint)
+            resultLabel.text = "Idź precz gorolu!"
+            prizeImage.image = UIImage(named:"slabo")
+        }
+        feedbackLabel.text = "Twój wynik to \(numberOfCorrectAnswers) na \(questions.count)"
+        resultButton.setTitle("A może by tak jeszcz raz?", for: .normal)
+        
+        resultView.backgroundColor = UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 0.5)
+        resultButton.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5)
+        
+        dimView.alpha = 1
     }
 }
 
