@@ -8,22 +8,15 @@
 
 import UIKit
 
-class AnswerButton: UIStackView {
+final class AnswerButton: UIStackView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+     //MARK:- Variables
+    private var numberStackView = UIStackView()
+    private var answerStackView = UIStackView()
+    private var numberLabel = UILabel()
+    private var answerLabel = UILabel()
     
-    var numberStackView = UIStackView()
-    var answerStackView = UIStackView()
-    
-    var numberLabel = UILabel()
-    var answerLabel = UILabel()
-    
+    //MARK:- Initializaion
     override init(frame: CGRect) {
         super.init(frame: frame)
         

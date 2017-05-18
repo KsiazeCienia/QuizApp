@@ -1,52 +1,52 @@
 [
   {
-      "questionText":"Dlaczego Igorek pojechał na Śląsk?",
-      "answers": ["bo w Warszawie osiagnłą już wszystko","bo sprzedawał pixy","bo chciał zostać górnikiem"],
-      "correctAnswer":1
-  },
-  {
-      "questionText":"Kim była babcia głównej bohaterki?",
-      "answers": ["zerem","ostrą szmatą","kapitanem straży miejskiej"],
-      "correctAnswer":1
-  },
-  {
-      "questionText":"Jak Igor zaimponował Hani?",
-      "answers": ["wyznaczeniem azymutu","wywrotką pixów", "jazdą na deskorolce"],
-      "correctAnswer":0
-  },
-  {
-      "questionText":"Czy kopalnie można wygrać w karty?",
-      "answers": ["Tak","Nie"],
-      "correctAnswer":0
-  },
-  {
-      "questionText":"Gdzie główny bogater zabrał dziewcznę na randkę?",
-      "answers": ["na dół","do maca", "na SZARLOTĘ"],
+      "questionText":"Co jest strojem sędziego?",
+      "answers": ["kitel","sutanna","toga"],
       "correctAnswer":2
   },
   {
-  "questionText":"Jaką wysokość ma najwyższa hałda stożkowa w Europie powszechnie nazywana Szarlotą?",
-  "answers": ["121","134","173"],
-  "correctAnswer":1
-  },
-  {
-      "questionText":"Jak kisi sie kapuste?",
-      "answers": ["kapusty się nie kisi","zmazanymi nogami","autyzmem"],
+      "questionText":"Flaga Austrii skadał się z koloru czerwonego i?",
+      "answers": ["czarnego","białego","żółtego"],
       "correctAnswer":1
   },
   {
-      "questionText":"Na jaką litere zaczynają się wszystkie słowa na śląsku?",
-      "answers": ["k","g","w"],
+      "questionText":"O kimś bez czupryny mówimy:",
+      "answers": ["łysy jak pięta","łysy jak kolano", "łysy jak łokieć"],
       "correctAnswer":1
   },
   {
-      "questionText":"Ktoś z poza Śląska to?",
-      "answers": ["hanys","knedliczek","gorol"],
+      "questionText":"Jaki kąt występuje między ramionami płatka śniego, jeżeli ich liczba wynosi 6?",
+      "answers": ["60 stopni","30 stopni","90 stopni"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Dinar to waluta obowiązująca w:",
+      "answers": ["Maroko","RPA", "Algierii"],
       "correctAnswer":2
   },
   {
-      "questionText":"Jak kończy się film?",
-      "answers": ["Igor umiera od przedawkowania","Igor i Hania idą na hałde","KWK Rydułtowy-Anna zostaje zamknięta"],
+      "questionText":"Ile gwizd widnieje na fladze Chin?",
+      "answers": ["10","15","5"],
+      "correctAnswer":2
+  },
+  {
+      "questionText":"Ile wynosi 4 do sześcianu?",
+      "answers": ["50","64","16"],
       "correctAnswer":1
+  },
+  {
+      "questionText":"Które z niemieckich miast dzielił zburzony w 1989 roku mur?",
+      "answers": ["Kolonię","Berlin","Bonn"],
+      "correctAnswer":1
+  },
+  {
+      "questionText":"Kto stoi na czele korpusu dyplomatycznego akredytowanego w danym państwie?",
+      "answers": ["dziekan","rektor","minister"],
+      "correctAnswer":0
+  },
+  {
+      "questionText":"Muller to typowe nazwisko pochodzenia?",
+      "answers": ["hiszpańskiego","francuskiego","niemieckiego"],
+      "correctAnswer":2
   }
 ]
